@@ -1,8 +1,9 @@
 <div ng-controller="UsersIndexController">
-  <h3>Users:</h3>
-  <ul>
+  <h3 class="header">Users:</h3>
+  <ul class="list">
     <li ng-repeat="user in users" ng-click="show(user)">
       {{user | json}}
+      <div class="chevron"></div>
     </li>
   </ul>
 
